@@ -1,0 +1,1275 @@
+/* @group Document */
+
+html, body {
+	width: 100%; min-height: 100%;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	background: #dbdbdb url(../images/bg-texture.png) 50% 0 repeat;
+	color: #666;
+	font: normal 14px/1.4 "FS Albert Web Regular", sans-serif;
+	font-size-adjust: 0.48;
+	position: relative;
+}
+
+/* @end */
+
+/* @group Basic Styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+blockquote,
+pre {
+	margin: 10px 0;
+}
+menu,
+menu ul,
+menu ol,
+menu li,
+nav,
+nav ul,
+nav ol,
+nav li {
+	margin: 0;
+	padding: 0;
+}
+em,
+i {
+	font-style: normal;  /* not used */
+}
+strong,
+b {
+	font-weight: normal; /* todo: define font instead */
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size-adjust: 0.49;
+	line-height: 1.2;
+}
+h1,
+h2,
+h3 {
+	color: #f7bb4c;
+	font-family: "FS Albert Web ExtraBold", sans-serif;
+	font-weight: 900;
+}
+h4,
+h5,
+h6 {
+	color: #333;
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-weight: bold;
+}
+h1,
+.alpha {
+	font-size: 50px;
+}
+h2,
+.beta {
+	font-size: 36px;
+}
+h3,
+.gamma {
+	font-size: 24px;
+}
+h4,
+.delta {
+	font-size: 18px;
+}
+h5,
+.epsilon {
+	font-size: 16px;
+}
+h6,
+.zeta {
+	font-size: 13px;
+}
+
+/* Links */
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+.ie a {
+	color: #666;
+}
+
+/* Input fonts */
+
+button,
+input,
+select,
+textarea {
+	font-family: "FS Albert Web Regular", sans-serif;
+}
+
+/* Global Classes */
+
+.regular {
+	font-family: "FS Albert Web Regular", sans-serif;
+	font-size-adjust: 0.48;
+	font-weight: normal;
+}
+.bold {
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-size-adjust: 0.49;
+	font-weight: bold;
+}
+.extrabold {
+	font-family: "FS Albert Web ExtraBold", sans-serif;
+	font-size-adjust: 0.49;
+	font-weight: 900;
+}
+.yellowtext,
+.yellowarrows {
+	color: #eca72c;
+}
+.whitetext,
+.whitearrows {
+	color: #fff;
+}
+.yellowarrows,
+.whitearrows {
+	display: inline-block;
+	font-size: 2em;
+	margin-top: -.3em;
+	vertical-align: middle;
+	zoom: 1;
+}
+.darkyellowtext {
+	color: #eca72c;
+}
+.darkertext {
+	color: #333;
+}
+.greytext {
+	color: #666;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.blockquote {
+	padding: 10px 30px 10px 40px;
+	position: relative;
+	font-size: 24px;
+}
+.blockquote:before,
+.blockquote:after,
+.blockquote .before,
+.blockquote .after {
+	font-size: 80px;
+	line-height: 1;
+	position: absolute;
+}
+
+.blockquote:before,
+.blockquote .before {
+	content: "\201c";
+	top: 0; left: 0;
+}
+.blockquote:after,
+.blockquote .after {
+	content: "\201d";
+	bottom: -.4em; right: .05em;
+}
+
+/* Icons and Sprites */
+
+.sprite,
+.sprite-inline {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+.sprite-inline {
+	display: inline-block;
+	zoom: 1;
+}
+
+/* @end */
+
+/* @group Base Layout */
+
+.wrap {
+	width: 984px;
+	margin: 0 auto;
+	position: relative;
+}
+.header,
+.main {
+	position: relative;
+	z-index: 10;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+.feature,
+.footer {
+	margin: 0 12px;
+}
+
+/* @end */
+
+/* @group Header */
+
+.header {
+	height: 110px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;	
+	
+}
+.header-logo,
+.header-nav,
+.header-login,
+.header-loggedin {
+	position: absolute;
+}
+.header-logo {
+	top: 28px; left: 28px;
+}
+.header-nav {
+	bottom: 0; left: 286px;
+	font-size: 16px;
+}
+.header-nav ul {
+	height: 32px;
+	border-right: 1px solid #d2d2d2;
+	list-style: none;
+}
+.header-nav li {
+	float: left;
+}
+.header-nav a {
+	display: block;
+	height: 32px;
+	padding: 0 20px;
+	float: left;
+	line-height: 30px;
+	border-left: 1px solid #d2d2d2;
+	text-decoration: none;
+}
+.header-nav a:active,
+.header-nav a:focus,
+.header-nav li:hover a,
+.header-nav li.current a {
+	color: #eca72c;
+}
+.header-login,
+.header-loggedin {
+	top: 10px; right: 28px;
+}
+.header-login h6 {
+	margin: 0 0 5px;
+}
+.header-login .form {
+	font-size: 12px;
+}
+.header-login .form .field {
+	float: left;
+}
+.header-login .form .field-text {
+	margin-right: 5px;
+}
+.header-login .form .input-text {
+	width: 90px; height: 12px;
+	line-height: 12px;
+}
+.header-loggedin {
+	font-size: 12px;
+}
+.header-loggedin h6 {
+	margin: 0 0 3px;
+}
+.header-loggedin p {
+	margin: 0;
+}
+.header-loggedin a {
+	text-decoration: none;
+}
+.header-loggedin a:active,
+.header-loggedin a:focus, 
+.header-loggedin a:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Feature */
+
+.feature {
+	min-height: 15px;
+	background: #f7bb4c;
+	position: relative;
+}
+.feature-home {
+	height: 300px;
+}
+.feature-subnav {
+	overflow: hidden;
+	padding: 0 30px 0 10px;
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-size-adjust: 0.49;
+	font-weight: bold;
+}
+.feature-subnav .menu {
+	font-size: 16px;
+	padding-top: 13px;
+}
+.feature-subnav .menu ul {
+	height: 32px;
+	list-style: none;
+}
+.feature-subnav .menu li {
+	float: left;
+}
+.feature-subnav .menu a {
+	display: block;
+	height: 34px;
+	padding: 0 20px;
+	float: left;
+	line-height: 24px;
+	border-left: 1px solid #c08e34;
+	text-decoration: none;
+}
+.feature-subnav .menu li:first-child a {
+	border-left: none;
+}
+.feature-subnav .menu a:active,
+.feature-subnav .menu a:focus,
+.feature-subnav .menu li:hover a,
+.feature-subnav .menu li.current a {
+	color: #fff;
+}
+.feature-subnav .right p {
+	margin: 8px 0 0;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+	user-select: none;
+}
+.jumbotron,
+.jumbotron .slides {
+	position: relative;
+	width: 640px; height: 300px;
+}
+.jumbotron canvas {
+	margin-left: -2px;
+}
+.jumbotron ul,
+.jumbotron li {
+	display: block;
+	margin: 0; padding: 0;
+	list-style: none;
+}
+.no-js .jumbotron canvas,
+.no-js .jumbotron .pager,
+.no-js .jumbotron .control,
+.no-canvas .jumbotron canvas,
+.no-canvas .jumbotron .control,
+.canvas .jumbotron .slides,
+.canvas .jumbotron .pager {
+	display: none;
+}
+.jumbotron .slides,
+.jumbotron .slides li,
+.jumbotron .slides li img {
+	position: absolute;
+	top: 0; left: 0;
+}
+.no-js .jumbotron .slides li:first-child {
+	z-index: 2;
+}
+.jumbotron .slides li .front {
+	top: 70px; left: 0;
+	z-index: 1;
+}
+.jumbotron .control,
+.jumbotron .pager {
+	position: absolute;
+	bottom: 15px; left: 15px;
+	z-index: 7;
+}
+.jumbotron .control li,
+.jumbotron .control li span,
+.jumbotron .pager a {
+	display: block;
+}
+.jumbotron .control li,
+.jumbotron .pager a {
+	cursor: pointer;
+	margin-right: 4px;
+	float: left;
+}
+.jumbotron .control li {
+	padding: 5px;
+	opacity: .4;
+	transition: opacity .5s;
+}
+.jumbotron .control li span,
+.jumbotron .pager a {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+.jumbotron .control li span {
+	width: 10px; height: 10px;
+	border-radius: 50%;
+	background: #000;
+}
+.jumbotron .control li.current {
+	opacity: 1;
+}
+.jumbotron .pager a {
+	width: 20px; height: 20px;
+	background: url(../images/home-pager.png) no-repeat -20px 0;
+}
+.jumbotron .pager a.activeSlide {
+	background-position: 0 0;
+}
+
+/* Loan calculator */
+
+.loancalc {
+	width: 320px;
+	position: absolute;
+	top: 0; bottom: 0; right: 0;
+	background: #fab73c;
+	color: #222;
+	z-index: 8;
+	box-shadow: -1px 1px 2px rgba(0,0,0,.2);
+	overflow: hidden;
+}
+.loancalc-inner {
+	width: 960px; height: 320px;
+	position: relative;
+}
+.loancalc.active {
+	left: 0;
+	box-shadow: none;
+}
+.loancalc-row {
+	float: left;
+	width: 320px; height: 250px;
+	margin: 25px 0;
+}
+.loancalc-row-inner {
+	padding: 0 30px;
+}
+.loancalc-row h4 {
+	margin-top: 0;
+}
+.loancalc-row .button {
+	padding: 5px 12px;
+	font: bold 14px/16px "FS Albert Web Bold", sans-serif;
+	font-size-adjust: 0.49;
+}
+.loancalc-row .button-tall {
+	padding: 15px 12px;
+}
+.loancalc-row-2,
+.loancalc-row-3 {
+	background: url(../images/border-loancalc-y.png) repeat-y 0 0;
+}
+.loancalc-row-1 .form {
+	font-size: 12px;
+}
+.loancalc-row-1 .field {
+	margin: 6px 0;
+}
+.loancalc-row-1 .label {
+	width: 150px;
+	margin-right: 6px;
+	line-height: 15px;
+	vertical-align: middle;
+}
+.loancalc-row-1 .input-text {
+	width: 90px;
+}
+.loancalc-row-1 .input-select {
+	width: 100px;
+}
+.loancalc-row-1 .input-date {
+	width: 67px;
+}
+.loancalc-row-1 .input-text,
+.loancalc-row-1 .input-select {
+	vertical-align: middle;
+}
+.loancalc-row-1 .button {
+	float: right;
+}
+.loancalc-row-2 {
+	text-align: center;
+}
+.loancalc-row-2 .application-table td {
+	padding: 2px 0;
+}
+.loancalc-row-2 .row-directdebit td {
+	background: url(../images/border-loancalc-x.png) repeat-x 0 100%;
+}
+.loancalc-row-2  .application-table .row-total td {
+	border: none;
+	background: url(../images/border-loancalc-x.png) repeat-x 0 100%;
+	padding: 6px 0 8px;
+}
+.loancalc-row-2 .application-table,
+.loancalc-row-2 .application-yellowbox {
+	margin: 15px auto;
+}
+.loancalc-row-2 .application-yellowbox {
+	padding: 5px 33px;
+	box-shadow: none;
+	border: 2px solid #fff;
+	background: none;
+}
+.loancalc-row-3 .field {
+	margin: 20px 0;
+}
+.loancalc-row-3 .input-text {
+	width: 250px;
+}
+
+/* @end */
+
+/* @group Main */
+
+.main {
+	
+}
+
+/* @end */
+
+/* @group Footer */
+
+.footer {
+	padding: 20px 0;
+}
+.footer a {
+	text-decoration: none;
+}
+.footer a:active,
+.footer a:focus, 
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer-left,
+.footer-right {
+	width: 480px;
+	float: left;
+}
+.footer-left {
+	overflow: hidden;
+}
+.footer-nav {
+	font-size: 13px;
+	float: left;
+	overflow: hidden;
+}
+.footer-nav ul,
+.footer-login {
+	float: left;
+	width: 150px;
+}
+.footer-nav ul {
+	margin-right: 12px;
+}
+.footer-login h6 {
+	margin: 0 0 5px;
+	color: inherit;
+}
+.footer-login .form {
+	font-size: 12px;
+}
+.footer-login .form .field {
+	margin: 5px 0;
+}
+.footer-login .form .field-text {
+	margin-right: 5px;
+}
+.footer-login .form .input-text {
+	width: 90px; height: 12px;
+	line-height: 12px;
+}
+.footer-right {
+	text-align: right;
+}
+.footer-right p {
+	margin: 0;
+}
+.footer-right .logos {
+	height: 0;
+	margin: 16px 0;
+}
+.footer-right .logos img {
+	margin-left: 10px;
+}
+.footer-logo {
+	clear: both;
+	border-bottom: 2px solid #ffdc71;
+	padding: 10px 0;
+}
+.footer-copyright {
+	font-size: 12px;
+}
+
+/* @end */
+
+/* @group Application Pages */
+
+.application {
+	padding: 20px 36px 36px;
+}
+.application-header {
+	margin-bottom: 15px;
+}
+/*.application-header h1 {
+	margin-bottom: 2px;
+}
+.application-header p {
+	margin-top: 2px;
+}*/
+.application-form-steps {
+	margin-bottom: 20px;
+}
+.application-form-steps ol {
+	overflow: hidden;
+}
+.application-form-steps li {
+	display: block;
+	width: 250px;
+	float: left;
+	overflow: hidden;
+}
+.application-form-steps li.current {
+	color: #f6ba4b;
+}
+.application-form-steps li .number,
+.application-form-steps li .text {
+	display: inline-block;
+	vertical-align: middle;
+	zoom: ;
+}
+.application-form-steps li .number {
+	font-size: 66px;
+	margin-right: 5px;
+}
+.application-form-steps li .text {
+	width: 100px;
+	font-size: 18px;
+	line-height: 1.1;
+}
+.application-form-steps a {
+	text-decoration: none;
+}
+.application-form {
+	padding: 30px 0 30px 50px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.application-form-left,
+.application-form-right {
+	width: 380px;
+	float: left;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+.application-form .field {
+	margin: 10px 0;
+}
+.application-form .label {
+	width: 150px;
+	margin-right: 10px;
+	line-height: 15px;
+	vertical-align: middle;
+}
+.application-form .field-textarea .label {
+	padding: 5px 0;
+	vertical-align: top;
+}
+.application-form .field-checkbox .label {
+	width: 295px;
+	font-size: 13px;
+}
+.application-form .input-text,
+.application-form .input-textarea {
+	width: 170px;
+}
+.application-form .input-select {
+	min-width: 90px; max-width: 180px;
+}
+.ie .application-form .input-select {
+	width: 180px;
+}
+.application-form .input-date {
+	width: 147px;
+}
+.application-form .input-text,
+.application-form .input-select,
+.application-form .input-fakecheckbox {
+	vertical-align: middle;
+}
+.application-form .button {
+	padding: 5px 12px;
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-weight: bold;
+	font-size-adjust: 0.49;
+	line-height: 16px;
+}
+.application-form .field-banknumber .input {
+	margin-right: 1px;
+}
+.application-form .field-banknumber .first {
+	width: 18px;
+}
+.application-form .field-banknumber .second {
+	width: 34px;
+}
+.application-form .field-banknumber .third {
+	width: 58px;
+}
+.application-form .field-banknumber .fourth {
+	width: 18px;
+	margin-right: 0;
+}
+.application-form .input-fakecheckbox {
+	margin-right: 10px;
+}
+.application-form .input-fakeupload-text {
+	width: 100px;
+}
+.application-form .input-fakeupload-button {
+	width: 65px;
+	padding: 3px 0;
+	line-height: 16px;
+}
+.application-form-footer {
+	clear: both;
+	padding-right: 50px;
+	overflow: hidden;
+}
+.application-form-footer .field-button.back {
+	float: left;
+}
+.application-form-footer .field-submit  {
+	float: right;
+}
+.application-table {
+	width: 250px;
+	margin: 10px 0 20px;
+	text-align: left;
+}
+.application-table td {
+	padding: 3px 0;
+	vertical-align: top;
+}
+.application-table .row-directdebit td {
+	padding-bottom: 6px;
+}
+.application-table .row-total td {
+	border: 2px solid #ffc846;
+	border-width: 2px 0;
+	padding: 6px 0;
+}
+.application-yellowbox {
+	width: 180px;
+	margin: 10px 0;
+	padding: 5px 35px;
+	background: #f9b841;
+	border-radius: 6px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	color: #333;
+	text-align: center;
+}
+.application-secure .application-form {
+	padding-right: 50px;
+}
+.application-iframe {
+	border: none;
+	width: 100%; min-height: 600px;
+}
+
+/* @end */
+
+/* @group Home Page */
+
+.home {
+	padding: 20px 16px 36px 36px;
+	overflow: hidden;
+}
+.home-left,
+.home-right {
+	width: 446px;
+	float: left;
+	margin: 0 20px 50px 0;
+}
+.home-box {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 5px 20px;
+}
+.home-boxless {
+	margin: 20px 0;
+}
+.home-follow {
+	height: 58px;
+	position: relative;
+	padding: 0;
+	border: none;
+	background: #fab73c;
+}
+.home-follow .sprite {
+	background: url(../images/home-followus.png) no-repeat 0 0;
+}
+.home-follow .title {
+	width: 230px; height: 60px;
+	margin: 0;
+	position: absolute;
+	top: -1px; left: 30px;
+}
+.home-follow ul {
+	width: 146px; height: 28px;
+	margin: 0; padding: 0;
+	position: absolute;
+	top: 15px; left: 294px;
+	list-style: none;
+}
+.home-follow ul li {
+	margin: 0;
+	float: left;
+}
+.home-follow ul a {
+	height: 28px;
+	margin-right: 12px;
+}
+.home-follow .facebook {
+	width: 28px; 
+	background-position: -234px 0;
+}
+.home-follow .twitter {
+	width: 28px;
+	background-position: -234px -32px;
+}
+.home-follow .youtube {
+	width: 54px;
+	background-position: -266px 0;
+}
+.home-interestrate {
+	text-align: center;
+	padding: 10px 20px;
+}
+.home-interestrate p {
+	margin: 0;
+}
+.home-interestrate .big {
+	font-size: 16px;
+}
+.home-interestrate .small {
+	color: #ccc;
+	font-size: 12px;
+}
+.home-testimonial {
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	background: #fab73c;
+}
+.home-testimonial .image {
+	width: 195px; height: 100%;
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.home-testimonial .text {
+	overflow: hidden;
+	padding: 2px 20px 2px 215px;
+	color: #000;
+	line-height: 1.2;
+}
+.home-testimonial .text .quote {
+	color: #fff;
+}
+.home-testimonial .text .small {
+	font-size: 13px;
+}
+.home .logos{ margin:0; }
+.home .logos a{ float:left; }
+
+
+/* @end */
+
+/* @group Loan History Page */
+
+.loanhistory {
+	padding: 20px 36px 36px;
+}
+.loanhistory-header {
+	margin-bottom: 15px;
+}
+.loanhistory-content {
+	padding: 30px 40px 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.loanhistory-table {
+	margin: 20px 0;
+}
+.loanhistory-table td,
+.loanhistory-table th {
+	padding: 5px 30px 5px 10px;
+	border-bottom: 2px solid #f9b841;
+}
+.loanhistory-table th {
+	font-weight: normal;
+	text-align: left;
+	color: #333;
+}
+.loanhistory-table th:first-child,
+.loanhistory-table td:first-child {
+	padding-left: 0;
+}
+.loanhistory-table .borderless td,
+.loanhistory-table .borderless th {
+	border-bottom: none;
+}
+.loanhistory-table-pastloans th,
+.loanhistory-table-pastloans td {
+	border-left: 2px solid #f9b841;
+}
+.loanhistory-table-pastloans th:first-child,
+.loanhistory-table-pastloans td:first-child {
+	border-left: none;
+}
+.loanhistory-form {
+	margin: 40px 0;
+}
+.loanhistory-form .button {
+	margin-right: 10px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+.loanhistory-form .button-tall {
+	padding: 15px 12px;
+}
+
+/* @end */
+
+/* @group Generic Page */
+
+.page {
+	padding: 36px 72px 50px;
+}
+.page .entry {
+	font-size: 15px;
+	overflow: hidden;
+}
+.page .entry .col-1of2 {
+	float: left;
+	width: 48%;
+	margin-left: 2%;
+}
+.page .entry .col-1of2:first-child {
+	margin-left: 0;
+}
+
+/* @end */
+
+/* @group Forms & Fields */
+
+.form .label,
+.form .inputwrap,
+.form .input-text,
+.form .input-textarea,
+.form .input-select,
+.form .input-fakecheckbox,
+.form .input-fakeupload,
+.form .input-fakeupload-text,
+.form .input-fakeupload-button,
+.form .tooltip {
+	display: inline-block;
+	zoom: 1;
+}
+.form .label.hidden {
+	display: none;
+}
+.form .inputwrap {
+	white-space: nowrap;
+}
+.form .input-text,
+.form .input-textarea,
+.form .input-select,
+.form .input-fakecheckbox,
+.form .input-fakeupload-text {
+  font-size:13px;
+	height: 14px; /* font size + 1 */
+	line-height: 14px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #f9f9f9;
+	box-shadow: inset 0 1px 1px #eee;
+}
+.form .input-text:focus,
+.form .input-textarea:focus {
+	outline: 0;
+	border-color: #52a8ec;
+	box-shadow: inset 0 1px 1px #ddd, 0 0 6px #52a8ec;
+	background: #fff;
+}
+.form .input-textarea {
+	resize: vertical;
+	height: 60px;
+}
+.form .field.error .input-text,
+.form .field.error .input-textarea,
+.form .field.error .input-select {
+	border-color: #e66;
+}
+.form .field.error .input-text:focus,
+.form .field.error .input-textarea:focus {
+	box-shadow: inset 0 1px 1px #ddd, 0 0 6px #e66;
+}
+.form .field-notice.error {
+	color: #e66;
+}
+.form .input-select {
+	height: 25px;
+}
+.form .input-fakecheckbox {
+	width: 14px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.form .input-fakecheckbox:active {
+	background-color: #f0f0f0;
+}
+.form .input-fakecheckbox.checked {
+	background-image: url(../images/icon-check.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.form .input-fakecheckbox.faked .input-checkbox {
+	margin-left: -200%;
+}
+.form button.Zebra_DatePicker_Icon {
+	width: 18px; height: 19px;
+	background-image: url(../images/icon-calendar.png);
+	margin-top: 3px;
+}
+.form .input-text.disabled,
+.form .input-textarea.disabled,
+.form .input-select.disabled,
+.form .input-fakecheckbox.disabled {
+	background-color: #ddd;
+	box-shadow: none;
+}
+.form .input-fakeupload {
+	height: 24px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.form .input-fakeupload-text {
+	overflow: hidden;
+}
+.form .input-fakeupload,
+.form .input-fakeupload-text,
+.form .input-fakeupload-button {
+	vertical-align: middle;
+}
+.form .input-fakeupload .input-upload {
+	width: 100%; height: 100%;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.form .tooltip {
+	position: relative;
+	margin-left: 4px;
+	padding: 2px;
+	vertical-align: top;
+}
+.form .tooltip-toggle {
+	width: 21px; height: 21px;
+	background: #eee;
+	text-align: center;
+	line-height: 21px;
+	border-radius: 50%;
+	cursor: help;
+}
+.form .tooltip-popup {
+	display: none;
+	width: 160px;
+	position: absolute;
+	top: 0; left: 30px;
+	padding: 4px 6px;
+	border: 1px solid #f9b841;
+	border-radius: 6px;
+	background: #fff;
+	font-size: 12px;
+	z-index: 10;
+	box-shadow: 0px 0 3px #ccc;
+}
+.form .tooltip.active .tooltip-toggle,
+.no-touch .form .tooltip:hover .tooltip-toggle {
+	background: #f9b841;
+}
+.form .tooltip.active .tooltip-popup,
+.no-touch .form .tooltip:hover .tooltip-popup {
+	display: block;
+}
+.form .button,
+.form .input-fakeupload-button {
+	appearance: normal;
+	color: #fff;
+	border: 1px solid #555;
+	border-radius: 6px;
+	background: #333;
+	background-image: linear-gradient(top, #666 0%, #000 100%);	
+	text-align: center;
+	box-shadow: inset 0px 1px 0 rgba(255,255,255,.2);
+}
+.form .button:active {
+	box-shadow: inset 0px 1px 0 rgba(0,0,0,.4);
+	background: #333;
+}
+.form .button.yellowarrows-left {
+	background-image: url(../images/icon-yellowarrows-left.png), linear-gradient(top, #666 0%, #000 100%);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 28px;
+}
+.no-multiplebgs .form .button.yellowarrows-left,
+.form .button.yellowarrows-left:active {
+	background-image: url(../images/icon-yellowarrows-left.png);
+}
+.form .button.yellowarrows-right {
+	background-image: url(../images/icon-yellowarrows-right.png), linear-gradient(top, #666 0%, #000 100%);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	padding-right: 28px;
+}
+.no-multiplebgs .form .button.yellowarrows-right,
+.form .button.yellowarrows-right:active {
+	background-image: url(../images/icon-yellowarrows-right.png);
+}
+.form .button-yellow {
+	background: #f9b841;
+	border-color: #f9b841;
+	color: #333;
+	box-shadow: none;
+}
+.form .button-yellow:active {
+	background: #eca72c;
+	border-color: #eca72c;
+	box-shadow: none;
+}
+
+
+/* @end */
+
+/* @group Contact Form */
+
+.contact-form {
+	padding: 15px 25px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	overflow: hidden;
+	margin: 10px 0;
+}
+.contact-form .form {
+	margin: 0 -5px;
+}
+.contact-form .field {
+	margin: 5px 0;
+	overflow: hidden;
+	padding: 5px;
+}
+.contact-form .label {
+	float: left;
+	line-height: 25px;
+}
+.contact-form .input-text,
+.contact-form .input-textarea {
+	width: 230px;
+	float: right;
+}
+.contact-form .input-textarea {
+	height: 90px;
+}
+.contact-form .button {
+	padding: 5px 12px;
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-weight: bold;
+	font-size-adjust: 0.49;
+	line-height: 16px;
+}
+.contact-form .field-submit  {
+	float: right;
+}
+
+/* @end */
+
+/* @group Contact Form */
+
+.accordion .title {
+	overflow: hidden;
+}
+.accordion .title a {
+	text-decoration: none;
+}
+.accordion .title a:active,
+.accordion .title a:focus,
+.accordion .title a:hover {
+	text-decoration: underline;
+}
+.accordion .reveal {
+	display: none;
+	overflow: hidden;
+}
+.no-js .accordion .item:target .reveal {
+	display: block;
+}
+
+/* @end */
+
+/* @group Screen smaller than website */
+
+@media only screen and (max-width: 984px) {
+	body {
+		background-position: 0 0;
+	}
+}
+
+/* @end */

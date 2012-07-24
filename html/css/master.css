@@ -1,0 +1,491 @@
+/* @group Document */
+
+html, body {
+	width: 100%; min-height: 100%;
+}
+body {
+	background: #dbdbdb url(../images/bg-texture.png) 50% 0 repeat;
+	color: #666;
+	font: normal 14px/1.4 "FS Albert Web Regular", sans-serif;
+	position: relative;
+}
+
+/* @end */
+
+/* @group Basic Styles */
+
+nav ul,
+nav ol {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, ol, ul {
+	margin: 13px 0;
+}
+em, i {
+	font-style: normal;  /* not used */
+}
+strong, b {
+	font-weight: normal; /* todo: define font instead */
+}
+
+/* Headings */
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	line-height: 1.2;
+}
+h1,
+.alpha {
+	font-size: 50px;
+}
+h2,
+.beta {
+	font-size: 36px;
+}
+h3,
+.gamma {
+	font-size: 24px;
+}
+h4,
+.delta {
+	font-size: 18px;
+}
+h5,
+.epsilon {
+	font-size: 16px;
+}
+h6,
+.zeta {
+	font-size: 13px;
+}
+
+/* Links */
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+/* Input fonts */
+
+button,
+input,
+select,
+textarea {
+	font-family: "FS Albert Web Regular", sans-serif;
+}
+
+/* Global Classes */
+
+.yellowtext,
+.yellowarrows {
+	color: #fab73c;
+}
+.darkyellowtext {
+	color: #eca72c;
+}
+.lowercase {
+	text-transform: lowercase;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* @end */
+
+/* @group Base Layout */
+
+.wrap {
+	width: 984px;
+	margin: 0 auto;
+}
+.header,
+.main {
+	position: relative;
+	z-index: 2;
+	background: #fff;
+	border-radius: 6px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+.feature,
+.footer {
+	margin: 0 12px;
+}
+
+/* @end */
+
+/* @group Header */
+
+.header {
+	height: 110px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.header-logo,
+.header-nav,
+.header-login {
+	position: absolute;
+}
+.header-logo {
+	top: 28px; left: 28px;
+}
+.header-nav {
+	bottom: 0; left: 286px;
+}
+.header-nav ul {
+	height: 32px;
+	border-right: 1px solid #d2d2d2;
+	list-style: none;
+}
+.header-nav li {
+	float: left;
+}
+.header-nav a {
+	display: block;
+	height: 32px;
+	padding: 0 20px;
+	float: left;
+	line-height: 30px;
+	border-left: 1px solid #d2d2d2;
+	text-decoration: none;
+}
+.header-nav a:active,
+.header-nav a:focus,
+.header-nav li:hover a,
+.header-nav li.current a {
+	color: #eca72c;
+}
+.header-login {
+	top: 10px; right: 28px;
+}
+
+/* @end */
+
+/* @group Feature */
+
+.feature {
+	min-height: 15px;
+	background: #f9b841;
+}
+
+/* @end */
+
+/* @group Main */
+
+.main {
+	
+}
+
+/* @end */
+
+/* @group Footer */
+
+.footer {
+	
+}
+
+/* @end */
+
+
+
+/* @group Application */
+
+.application {
+	padding: 20px 36px 36px;
+}
+.application-header {
+	
+}
+.application-form-steps {
+	margin-bottom: 20px;
+}
+.application-form-steps ol {
+	overflow: hidden;
+}
+.application-form-steps li {
+	display: block;
+	width: 250px;
+	float: left;
+	overflow: hidden;
+}
+.application-form-steps li.current {
+	color: #f6ba4b;
+}
+.application-form-steps li .number,
+.application-form-steps li .text {
+	display: inline-block;
+	vertical-align: middle;
+}
+.application-form-steps li .number {
+	font-size: 66px;
+	margin-right: 5px;
+}
+.application-form-steps li .text {
+	width: 100px;
+	font-size: 18px;
+	line-height: 1.1;
+}
+.application-form-steps a {
+	text-decoration: none;
+}
+.application-form {
+	padding: 30px 0 30px 50px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.application-form-left,
+.application-form-right {
+	width: 380px;
+	float: left;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+.application-form .field {
+	margin: 10px 0;
+}
+.application-form .label {
+	width: 150px;
+	margin-right: 10px;
+	line-height: 15px;
+	vertical-align: middle;
+}
+.application-form .field-textarea .label {
+	padding: 5px 0;
+	vertical-align: top;
+}
+.application-form .field-checkbox .label {
+	width: 295px;
+	font-size: 13px;
+}
+.application-form .input-text,
+.application-form .input-textarea {
+	width: 170px;
+}
+.application-form .input-select {
+	min-width: 90px; max-width: 180px;
+}
+.application-form .input-date {
+	width: 147px;
+}
+.application-form .input-text,
+.application-form .input-select,
+.application-form .input-fakecheckbox {
+	vertical-align: middle;
+}
+.application-form .field-banknumber .input {
+	margin-right: 1px;
+}
+.application-form .field-banknumber .first {
+	width: 18px;
+}
+.application-form .field-banknumber .second {
+	width: 34px;
+}
+.application-form .field-banknumber .third {
+	width: 58px;
+}
+.application-form .field-banknumber .fourth {
+	width: 18px;
+	margin-right: 0;
+}
+.application-form .input-fakecheckbox {
+	margin-right: 10px;
+}
+
+.application-form-footer {
+	clear: both;
+	padding-right: 50px;
+	overflow: hidden;
+}
+.application-form-footer .field-button.back {
+	float: left;
+}
+.application-form-footer .field-submit  {
+	float: right;
+}
+.application-form-footer .button {
+	padding: 5px 10px;
+}
+.application-table {
+	width: 250px;
+	margin: 10px 0 20px;
+}
+.application-table th {
+	font-weight: normal;
+	text-align: left;
+}
+.application-table td {
+	padding: 3px 0;
+	vertical-align: top;
+}
+.application-table .row-directdebit td {
+	padding-bottom: 6px;
+}
+.application-table .row-total td {
+	border: 2px solid #ffc846;
+	border-width: 2px 0;
+	padding: 6px 0;
+}
+.application-yellowbox {
+	width: 170px;
+	margin: 10px 0;
+	padding: 5px 30px;
+	background: #f9b841;
+	border-radius: 6px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+	color: #333;
+	text-align: center;
+}
+
+/* @end */
+
+/* @group Comodo Badge */
+
+.comodo {
+	position: fixed;
+	bottom: 0; right: 0;
+	z-index: 100;
+}
+.comodo img {
+	display: block;
+}
+
+/* @end */
+
+/* @group Forms & Fields */
+
+.form .label,
+.form .inputwrap,
+.form .input-text,
+.form .input-textarea,
+.form .input-select,
+.form .input-fakecheckbox,
+.form .tooltip {
+	display: inline-block;
+}
+.form .inputwrap {
+	white-space: nowrap;
+}
+.form .input-text,
+.form .input-textarea,
+.form .input-select,
+.form .input-fakecheckbox {
+	height: 15px; /* font size + 1 */
+	line-height: 15px;
+	padding: 4px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	background: #f9f9f9;
+	box-shadow: inset 0 1px 1px #eee;
+}
+.form .input-text:focus,
+.form .input-textarea:focus {
+	outline: 0;
+	border-color: #52a8ec;
+	box-shadow: inset 0 1px 1px #ddd, 0 0 6px #52a8ec;
+	background: #fff;
+}
+.form .input-textarea {
+	resize: vertical;
+	height: 65px;
+}
+.form .field.error .input-text,
+.form .field.error .input-textarea,
+.form .field.error .input-select {
+	border-color: #e66;
+}
+.form .field.error .input-text:focus,
+.form .field.error .input-textarea:focus {
+	box-shadow: inset 0 1px 1px #ddd, 0 0 6px #e66;
+}
+.form .field-notice.error {
+	color: #e66;
+}
+.form .input-select {
+	height: 25px;
+}
+.form .input-fakecheckbox {
+	width: 15px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.form .input-fakecheckbox:active {
+	background-color: #f0f0f0;
+}
+.form .input-fakecheckbox.checked {
+	background-image: url(../images/icon-check.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.js .form .input-checkbox {
+	margin-left: -200%;
+}
+.form button.Zebra_DatePicker_Icon {
+	width: 18px; height: 19px;
+	background-image: url(../images/icon-calendar.png);
+	margin-top: 3px;
+}
+.form .input-text.disabled,
+.form .input-textarea.disabled,
+.form .input-select.disabled,
+.form .input-fakecheckbox.disabled {
+	background-color: #ddd;
+	box-shadow: none;
+}
+.form .tooltip {
+	position: relative;
+	margin-left: 4px;
+	padding: 2px;
+	vertical-align: top;
+}
+.form .tooltip-toggle {
+	width: 21px; height: 21px;
+	background: #eee;
+	text-align: center;
+	line-height: 21px;
+	border-radius: 50%;
+	cursor: help;
+}
+.form .tooltip-popup {
+	display: none;
+	width: 160px;
+	position: absolute;
+	top: 0; left: 30px;
+	padding: 4px 6px;
+	border: 1px solid #f9b841;
+	border-radius: 6px;
+	background: #fff;
+	font-size: 12px;
+	z-index: 10;
+	box-shadow: 0px 0 3px #ccc;
+}
+.form .tooltip:hover .tooltip-toggle {
+	background: #f9b841;
+}
+.form .tooltip:hover .tooltip-popup {
+	display: block;
+}
+.form .button {
+	appearance: normal;
+	color: #fff;
+	border: 1px solid #555;
+	border-radius: 6px;
+	background: #333;
+	background: linear-gradient(top, #666 0%, #000 100%);	
+}
+
+/* @end */
+
+
+
+
+

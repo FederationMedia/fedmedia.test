@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'FS Albert Web Bold';
+    src: url('http://f.fontdeck.com/f/1/MkZSX1QwdVoAAMQH8eFG+2T1mIWSYIRIgBgcU+9MQN963tBlm+ho/gcc+HnlEgUf95GUeFNqQ1qKWw.eot');
+    src: url('http://f.fontdeck.com/f/1/MkZSX1QwdVoAAMQH8eFG+2T1mIWSYIRIgBgcU+9MQN963tBlm+ho/gcc+HnlEgUf95GUeFNqQ1qKWw.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/MkZSX1QwdVoAAMQH8eFG+2T1mIWSYIRIgBgcU+9MQN963tBlm+ho/gcc+HnlEgUf95GUeFNqQ1qKWw.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/MkZSX1QwdVoAAMQH8eFG+2T1mIWSYIRIgBgcU+9MQN963tBlm+ho/gcc+HnlEgUf95GUeFNqQ1qKWw.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Albert Web Regular';
+    src: url('http://f.fontdeck.com/f/1/SnNmbU94dmYAAGlRMhHvFH6Ce8QLsdA2g0/p0blnzxJVP35kaCy3glx7X/27cxB8sj19y5qb9dBhVw.eot');
+    src: url('http://f.fontdeck.com/f/1/SnNmbU94dmYAAGlRMhHvFH6Ce8QLsdA2g0/p0blnzxJVP35kaCy3glx7X/27cxB8sj19y5qb9dBhVw.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/SnNmbU94dmYAAGlRMhHvFH6Ce8QLsdA2g0/p0blnzxJVP35kaCy3glx7X/27cxB8sj19y5qb9dBhVw.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/SnNmbU94dmYAAGlRMhHvFH6Ce8QLsdA2g0/p0blnzxJVP35kaCy3glx7X/27cxB8sj19y5qb9dBhVw.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FS Albert Web ExtraBold';
+    src: url('http://f.fontdeck.com/f/1/ekRkZjJWSHcAAFzVuq/RgyunFbAv9aA3LTtxOl0Ak69vO/larZMZEd9pCzYkdc4bwhxCsshuXvi/lw.eot');
+    src: url('http://f.fontdeck.com/f/1/ekRkZjJWSHcAAFzVuq/RgyunFbAv9aA3LTtxOl0Ak69vO/larZMZEd9pCzYkdc4bwhxCsshuXvi/lw.eot?') format('embedded-opentype'),
+    url('http://f.fontdeck.com/f/1/ekRkZjJWSHcAAFzVuq/RgyunFbAv9aA3LTtxOl0Ak69vO/larZMZEd9pCzYkdc4bwhxCsshuXvi/lw.woff') format('woff'),
+    url('http://f.fontdeck.com/f/1/ekRkZjJWSHcAAFzVuq/RgyunFbAv9aA3LTtxOl0Ak69vO/larZMZEd9pCzYkdc4bwhxCsshuXvi/lw.ttf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+  color: #666;
+  font: normal 14px/1.4 "FS Albert Web Regular", Tahoma, sans-serif;
+  font-size-adjust: 0.48;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+blockquote,
+pre {
+  margin: 10px 0;
+}
+em, i {
+  font-style: normal;  /* not used */
+}
+strong, b {
+  font-weight: normal; /* todo: define font instead */
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size-adjust: 0.49;
+  line-height: 1.2;
+}
+h1,
+h2,
+h3 {
+  color: #f7bb4c;
+  font-family: "FS Albert Web ExtraBold", sans-serif;
+  font-weight: 900;
+}
+h4,
+h5,
+h6 {
+  color: #333;
+  font-family: "FS Albert Web Bold", sans-serif;
+  font-weight: bold;
+}
+h1,
+.alpha {
+  font-size: 50px;
+}
+h2,
+.beta {
+  font-size: 36px;
+}
+h3,
+.gamma {
+  font-size: 24px;
+}
+h4,
+.delta {
+  font-size: 18px;
+}
+h5,
+.epsilon {
+  font-size: 16px;
+}
+h6,
+.zeta {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.blockquote:before,
+.blockquote:after,
+.blockquote .before,
+.blockquote .after {
+  font-size: 80px;
+  line-height: 1;
+  position: absolute;
+}
+
+.blockquote:before,
+.blockquote .before {
+  content: "\201c";
+  top: 0; left: 0;
+}
+.blockquote:after,
+.blockquote .after {
+  content: "\201d";
+  bottom: -.4em; right: .05em;
+}
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+p {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+.regular {
+  font-family: "FS Albert Web Regular", tahoma, arial, sans-serif;   font-size-adjust: 0.48;   font-weight: normal;
+}
+
+.bold {
+  font-family: "FS Albert Web Bold", tahoma, arial, sans-serif;   font-size-adjust: 0.49;   font-weight: bold;
+}
+
+.extrabold {
+  font-family: "FS Albert Web ExtraBold", tahoma, arial, sans-serif;   font-size-adjust: 0.49;   font-weight: 900; 
+}
+
+.yellowtext {
+  color: #fab73c;
+}
+
+.whitetext {
+  color: #fff;
+}
+
+.darkyellowtext {
+  color: #eca72c;
+}
+
+.darkertext {
+  color: #333;
+}
+
+.greytext {
+  color: #666;
+}
+
+.lowercase {
+text-transform: lowercase;
+}
+
+.uppercase {
+text-transform: uppercase;
+}
+
+.blockquote {
+  padding: 10px 30px 10px 40px;   position: relative;   font-size: 24px;
+}
+

@@ -1,0 +1,177 @@
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+.error {
+	color: #e66;
+	padding: 10px;
+	background-color: #fee;
+	border: 1px #e66 solid;
+	margin-bottom: 10px;
+	display: block;
+	border-radius: 6px;
+	text-align: left;
+}	
+	.error ul {
+		overflow: hidden;
+		margin: 0px;
+	}
+	
+	.loancalc .error {
+		border: none;
+		margin-bottom: -10px;
+		border-radius: 0px;
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		opacity: 1;
+		background-color: #f00;
+		color: #fff;
+		padding: 15px;
+	}
+		.loancalc .error li {
+			float: left;
+			margin-right: 20px;
+		}
+
+.success {
+	color: #0a0;
+	padding: 10px;
+	background-color: #aea;
+	border: 1px #0a0 solid;
+	margin-bottom: 10px;
+	display: block;
+	border-radius: 6px;
+	text-align: left;
+}	
+
+.application-form .error,
+.application-form .success {
+	margin-right: 50px;
+}	
+
+.generation-progress-con {
+	height: 700px;
+	display: none;
+}
+	.generation-progress-con iframe {
+		padding: 30px;
+		height: 540px;
+		width: 845px;
+	}
+
+.application-form-footer {
+	margin-top: 20px;
+	padding-right: 0px;
+}
+.application-form .application-form-footer {
+	padding-right: 50px;
+}
+
+.intro {
+	font-style: italic;
+	font-weight: bold;
+	color: #666;
+}
+
+.faq-links {
+	margin-bottom: 20px;
+}
+	.faq-links a {
+		display: block;
+		margin-bottom: 5px;
+	}
+	
+.header-login .msg-container {
+	font-size: 12px;
+}
+	.header-login .msg-container .error-msg {
+		float: left;
+		color: #a00;
+	}
+	
+	.header-login .msg-container a {
+		float: right;
+	}
+	
+	.footer-login .header-login .msg-container * {
+		float: left;
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
+.form.form-horiz {
+	overflow: hidden;
+}
+	.form.form-horiz .field {
+		float: left;
+		margin-right: 5px;
+	}
+
+/*
+.main {
+	padding: 20px 36px 36px;
+}
+	.main .page {
+		padding: 0px;
+	}
+.application {
+	padding: 0px;
+}
+
+.home {
+	padding: 0px;
+}
+	.home .home-right {
+		margin-right: 0px;
+	}
+*/
+	.application .button{
+		padding: 6px 12px;
+	}
+
+.loancalc-row-2 .application-yellowbox {
+	padding: 5px;
+	width: auto;
+}
+
+.jumbotron, .jumbotron .slides {
+}
+	
+.footer-login .header-login,
+.footer-login .header-loggedin{
+	position: static;
+	top: 0;
+	left: 0;
+}
+
+.sitemap-con ul {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.sitemap-con li {
+	list-style: none;
+}
+.sitemap-con ul li {
+	font-weight: normal;
+}
+	
+.sitemap-con > ul > li {
+	font-weight: bold;
+}
+
+.confirmation-con {
+	background-color: white;
+	padding: 0px;
+	background-image: none;
+}

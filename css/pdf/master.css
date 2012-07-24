@@ -1,0 +1,81 @@
+@page {
+	margin: 1.5cm 1cm;
+}
+body {
+	background: #fff;
+	color: #333;
+	font-size: 75%;
+	font-family: "FS Albert Web Regular", sans-serif;
+	font-size-adjust: 0.48;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: "FS Albert Web ExtraBold", sans-serif;
+	font-weight: 900;
+	font-size-adjust: 0.49;
+}
+b,
+strong {
+	font-family: "FS Albert Web Bold", sans-serif;
+	font-weight: bold;
+	font-size-adjust: 0.49;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+ol,
+ul,
+li,
+table {
+	margin: .75em 0;
+}
+menu, ol, ul {
+	padding: 0 0 0 2em;
+}
+table {
+	width: 100%;
+}
+table td,
+table th {
+	border: 1px solid #ccc;
+	padding: 0 .75em;
+	text-align: left;
+	vertical-align: top;
+}
+.header {
+	border-bottom: 2pt solid #f8b840;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+}
+.signarea {
+	width: 25em;
+	margin: .75em 0;
+	height: 5em; 
+	border: 1pt solid #ccc;
+}
+.borderbox {
+	border: 1pt solid #ccc;
+	margin: .75em 0;
+	padding: 0 .75em;
+}
+.subheading {
+	margin-top: -.75em;
+}
+
+@media screen {
+	body {
+		font-size: 16px;
+	}
+	.wrap {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 2em;
+	}
+}
