@@ -1,1 +1,2 @@
-YUS!
+this is a initial test - I think we should all make multiple edits to this file so we can see how to resolve conflicts.
+
